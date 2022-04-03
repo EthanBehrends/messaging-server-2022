@@ -1,0 +1,32 @@
+{
+    "server": {
+        "port": 3400
+    },
+    "database": {
+        "enabled": true,
+        "uri": null,
+        "username": null,
+        "password": null,
+        "host": "localhost",
+        "port": 27017,
+        "dbName": "smartFramework",
+        "options": {
+            "retrywrites": true
+        }
+    },
+    "mongoose": {
+        "options": {
+            "autoIndex": false
+        }
+    },
+    "redis": {
+        "enabled": true,
+        "uri": null,
+        "ssl": false,
+        "username": null,
+        "password": null,
+        "host": "localhost",
+        "port": 6379,
+        "dbNumber": null
+    }
+}
