@@ -9,7 +9,7 @@ const generateHash = (pass) => {
     return [hash, salt]
 }
 
-const validatePass = (pass, hash, salt) => {
+const validateHash = (pass, hash, salt) => {
     return hash == crypto.pbkdf2Sync(pass, salt, 1000, 64, `sha512`).toString(`hex`)
 }
 
@@ -27,7 +27,7 @@ const decodeToken = (token) => {
 
 module.exports = {
     generateHash,
-    validatePass,
+    validateHash,
     generateToken,
     decodeToken
 }

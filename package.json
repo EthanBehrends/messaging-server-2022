@@ -24,5 +24,11 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "_moduleAliases": {
+    "core": "core",
+    "middleware": "middleware",
+    "models": "models",
+    "utils": "utils"
   }
 }

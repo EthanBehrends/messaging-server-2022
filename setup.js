@@ -1,5 +1,6 @@
 const { db, redis } = require('./core')
 require('dotenv').config()
+const APIUtils = require("utils/APIUtils")
 
 
 module.exports = async () => {
@@ -17,6 +18,8 @@ const setGlobals = () => {
     global._ = require('lodash')
     global.utils = require('./utils/GlobalUtils')
     global.env = process.env
+
+    global.errorRes = APIUtils.errorRes
 }
 
 const setPrototypes = () => {
