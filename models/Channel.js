@@ -16,6 +16,8 @@ schema.add({
 schema.set("collection", collection)
 schema.set("modelName", modelName)
 
+schema.set("send-websocket-updates", true)
+
 schema.statics.addRecord = async (data, req) => {
     const model = mongoose.model(modelName)
 

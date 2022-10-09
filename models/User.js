@@ -46,6 +46,7 @@ schema.methods.toClient = function () {
         "email",
         "firstName",
         "lastName",
+        "_id"
     ]
 
     const data = {}
